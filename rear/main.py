@@ -85,15 +85,15 @@ def login(account, password):
         else:
             return account
 
-@app.get("/new/{name}/{price}/{detail}/{img_url}")
-def new(name, price, detail, img_url):
+@app.get("/new/{name}/{price}/{detail}")
+def new(name, price, detail):
     command = f"SELECT MAX(id) FROM products"
     cursor2.execute(command)
     r = cursor2.fetchone()
     print(r)
     print(type (r[0]))
     id=r[0]+1
-    command = f"INSERT INTO `products` (`name`, `price`, `detail`,`img_url`, `id`) VALUES (\"{name}\", \"{price}\", \"{detail}\",\"{img_url}\", \"{id}\");"
+    command = f"INSERT INTO `products` (`name`, `price`, `detail`, `id`) VALUES (\"{name}\", \"{price}\", \"{detail}\", \"{id}\");"
     cursor2.execute(command)
     c.commit()
     return "newS"
@@ -119,6 +119,7 @@ def delProducts(id):
 @app.get("/edit/{id}/{name}/{price}/{detail}")
 def editProducts(id, name, price, detail):
     command = f"UPDATE products SET name=\"{name}\",price=\"{price}\",detail=\"{detail}\" WHERE id =\"{id}\""
+    print(command)
     cursor.execute(command)
     c.commit()
     print("EDIT")

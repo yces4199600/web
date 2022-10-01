@@ -86,18 +86,14 @@
               <input class="form-control" name="newName" v-model="arr.name">
             </div>
             
-            <label for="exampleInputPassword1">商品圖片</label>
-
-
+            <!-- <label for="exampleInputPassword1">商品圖片</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <div class="input-group-text">https://</div>
               </div>
               <input type="text" class="form-control" name="imageUrl" v-model="arr.img_url">
-            </div>
+            </div> -->
 
-            <!-- 是不是傻狗阿 -->
-            
             <div class="form-group">
               <label for="exampleInputPassword1">商品價錢</label>
               <input class="form-control" name="price" v-model="arr.price">
@@ -178,7 +174,7 @@ export default {
     },
     createProduct(){
       console.log(this)
-      this.$http.get('http://localhost:8000/new/' + this.arr.name + '/' + this.arr.price  + '/' + this.arr.detail + '/' + this.arr.img_url)
+      this.$http.get('http://localhost:8000/new/' + this.arr.name + '/' + this.arr.price  + '/' + this.arr.detail)
       .then( () => this.$emitter.emit('reload',1))
       .catch( r => console.log(r))
 
