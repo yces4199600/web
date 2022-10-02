@@ -5,7 +5,7 @@
   <div class="container">
     <div class="mt-3 row">
       <!-- <div class="card col-4">
-        <img src="https://f.ecimg.tw/items/DGBJCWA900BL03D/000001_1635130622.jpg" class="card-img-top" alt="瑪利歐派對 超級巨星"/>
+        <img src="https:%2F/f.ecimg.tw/items/DGBJCWA900BL03D/000001_1635130622.jpg" class="card-img-top" alt="瑪利歐派對 超級巨星"/>
         <div class="card-body">
           <h5 class="card-title">瑪利歐派ss對 超級巨22星</h5>
           <a class="id" style="display: none">14</a>
@@ -24,7 +24,7 @@
           <h5 class="card-title">{{ item.name }}</h5>
           <a class="id" style="display: none">{{ item.id }}</a>
           <p class="card-text">{{ item.detail }}</p>
-          <button @click="plus(item.id)" class="btn btn-primary me-md-2">{{ item.price }}</button>
+          <button @click="plus(item.id)" class="btn btn-success me-md-2">{{ item.price }}</button>
 
           <!-- <a href="modifyFile" class="btn btn-danger">修改</a> -->
 
@@ -173,4 +173,5 @@ export default {
 .card img{transform:scale(1,1);transition: all 0.5s ease-out;}
 .card img:hover{transform:scale(1.1,1.1);}
 </style>
+#https:%2F%2Fim2.book.com.tw%2Fimage%2FgetImage?i=https:%2F%2Fwww.books.com.tw%2Fimg%2F001%2F085%2F54%2F0010855481.jpg&v=5e9590d4a&w=348&h=348
 

@@ -3,7 +3,7 @@
 <div class="container">
   <div class="card text-white bg-dark mb-3">
     <!-- 範例卡片 -->
-    <div class="row g-0" style = "border:8px #13aeab solid;" v-for="(item,index) in itemList" :key="item.id" :id="'card-' + item.id">
+    <div class="row g-0" style = "border:8px #343a40 solid;" v-for="(item,index) in itemList" :key="item.id" :id="'card-' + item.id">
       <div class="col-md-4">
         <img :src="'https://' + item.img_url" class="card-img-top" alt="瑪利歐派對 超級巨星"/>
       </div>
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <router-link @click="clear()" to="/"  class="btn btn-primary me-md-2 btn-primary">送出訂單</router-link>
+    <router-link @click="clear()" to="/"  class="btn btn-primary me-md-2 btn-success">送出訂單</router-link>
 
   </div>
 </div>

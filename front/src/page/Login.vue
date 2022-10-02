@@ -9,7 +9,7 @@
       <label for="password" class="form-label ">密碼</label>
       <input v-model="password" type="password" class="form-control"/>
     </div>
-    <button @click="submit()" class="btn btn-primary">登入</button>
+    <button @click="submit()" class="btn btn-success">登入</button>
   </form>
 </template>
 

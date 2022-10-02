@@ -21,7 +21,7 @@
       <label for="phone" class="form-label ">手機號碼</label>
       <input v-model="phone" type="text" class="form-control " id="phone" name="phone" />
     </div>
-    <button @click="submit()" class="btn btn-primary">註冊</button>
+    <button @click="submit()" class="btn btn-success">註冊</button>
   </form>
 </template>
 
