@@ -1,7 +1,7 @@
 <template>
 
 <div class="container">
-  <div class="card text-white bg-dark mb-3">
+  <div class="card text-white bg-dark mb-3 pad5">
     <!-- 範例卡片 -->
     <div class="row g-0" style = "border:8px #343a40 solid;" v-for="(item,index) in itemList" :key="item.id" :id="'card-' + item.id">
       <div class="col-md-4">
@@ -19,7 +19,6 @@
       </div>
     </div>
     <router-link @click="clear()" to="/"  class="btn btn-primary me-md-2 btn-success">送出訂單</router-link>
-
   </div>
 </div>
 </template>
@@ -83,4 +82,5 @@ export default {
 .card{overflow:hidden;}
 .card img{transform:scale(1,1);transition: all 0.5s ease-out;}
 .card img:hover{transform:scale(1.1,1.1);}
+.pad5{padding-left:5px;padding-right:5px;padding-bottom:5px;}
 </style>

@@ -3,7 +3,7 @@
 <!-- TODO: -->
 <!-- 新增商品的按鈕，和彈出視窗 -->
   <div class="container">
-    <div class="mt-3 row">
+    <div class="mt-3 row pad20">
       <!-- <div class="card col-4">
         <img src="https:%2F/f.ecimg.tw/items/DGBJCWA900BL03D/000001_1635130622.jpg" class="card-img-top" alt="瑪利歐派對 超級巨星"/>
         <div class="card-body">
@@ -172,6 +172,7 @@ export default {
 .card{overflow:hidden;}
 .card img{transform:scale(1,1);transition: all 0.5s ease-out;}
 .card img:hover{transform:scale(1.1,1.1);}
+.pad20{padding-bottom:20px;}
 </style>
 #https:%2F%2Fim2.book.com.tw%2Fimage%2FgetImage?i=https:%2F%2Fwww.books.com.tw%2Fimg%2F001%2F085%2F54%2F0010855481.jpg&v=5e9590d4a&w=348&h=348
 
